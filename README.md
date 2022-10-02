@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println(nameGen.pick(random(4200)));
+  Serial.println(nameGen[random(4200)]);
   delay(1000);
 }
 ```

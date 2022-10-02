@@ -140,7 +140,7 @@ class NameGenerator {
             "sordid",
         };
     public:
-        inline const char* pick(int seed) {
+        const char* operator [](int seed) const {
             byte nounsLength = ((sizeof(nouns)) / (sizeof(nouns[0])));
             byte adjsLength = ((sizeof(adjectives)) / (sizeof(adjectives[0])));
 
